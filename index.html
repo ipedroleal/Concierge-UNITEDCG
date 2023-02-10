@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concierge - Igreja UNITED</title>
+
+    <link rel="stylesheet" href="./src/styles/globalStyles.css">
+    <link rel="stylesheet" href="./src/styles/animations.css">
+    <link rel="stylesheet" href="./src/styles/index.css">
+
+    <script src="./src/scripts/booksDataBase.js" defer></script>
+    <script src="./src/scripts/index.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="nav__container">
+            <p class="nav__logo">
+                UN
+                TD
+            </p>
+            <nav class="nav__container--buttons">
+                <img id="searchBtn" src="./src/assets/search.svg">
+                <img id="menuBtn" src="./src/assets/menu.svg">
+            </nav>
+        </div>
+        <div class="nav__search">
+            <input type="text" placeholder="Pesquisar...">
+            <img src="./src/assets/arrow.svg">
+        </div>
+        </div>
+            <nav class="nav__menu">
+                <a href="#products__list">Produtos</a>
+                <a href="./src/pages/inscricao.html">Inscrições</a>
+            </nav>
+    </header>
+
+    <section class="banners__container">
+        <img class="selected" src="./src/assets/banner/background1.svg">
+        <img src="./src/assets/banner/background2.svg">
+        <img src="./src/assets/banner/background3.svg">
+    </section>
+
+    <main>
+        <ul id="products__list" class="list__container">
+                <li><a>Livros</a></li>
+                <li><a>Acessórios</a></li>
+                <li><a>Vestuário</a></li>
+        </ul>
+
+        <section class="allProducts__container">
+            <h2 class="mostWanted__title">Livros</h2>
+            <ul class="products__mostWanted">
+                <!-- <li class="product__card">
+                    <div class="product__containerImgs">
+                        <img src="./src/assets/books/entrandonolugardeoracao.jpg" class="product__img">
+                        <img src="./src/assets/moreinfo.svg" class="product__infoBtn">
+                    </div>
+                    <div class="product__infos">
+                        <h3 class="product__name">Entrando no Lugar de Oração</h3>
+                        <p class="product__price">R$30,00</p>
+                    </div>
+                </li> -->
+            </ul>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+body, header, main, footer, section, footer, div, ul, li, h1, h2, h3, p, a, button, input, img {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    font-family: 'Inter', sans-serif;
+}
+
+:root {
+    --background-color: #F4F4F4;
+    --grey: #D9D9D9;
+    --black: #212529;
+
+    --radius-default: 8px;
+}
