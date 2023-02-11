@@ -10,8 +10,6 @@
     <link rel="stylesheet" href="./src/styles/animations.css">
     <link rel="stylesheet" href="./src/styles/index.css">
 
-    <script src="./src/scripts/booksDataBase.js" defer></script>
-    <script src="./src/scripts/index.js" defer></script>
 </head>
 <body>
     <header>
@@ -50,8 +48,8 @@
         </ul>
 
         <section class="allProducts__container">
-            <h2 class="mostWanted__title">Livros</h2>
-            <ul class="products__mostWanted">
+            <h2 class="books__title">Livros</h2>
+            <ul class="books__list">
                 <!-- <li class="product__card">
                     <div class="product__containerImgs">
                         <img src="./src/assets/books/entrandonolugardeoracao.jpg" class="product__img">
@@ -63,7 +61,26 @@
                     </div>
                 </li> -->
             </ul>
+
+            <h2 class="accessories__title">Acessórios</h2>
+            <uL class="acessories__list"></uL>
+
+            <h2 class="clothing__title">Vestuário</h2>
+            <ul class="clothing__list"></ul>
         </section>
+
+        <dialog class="modal__controller">
+            <!-- <div class="modal__container">
+                <p class="modal__close">x</p>
+                <img class="modal__img" src="./src/assets/books/entrandonolugardeoracao.jpg">
+                <h3 class="modal__title">Entrando no lugar de oração</h3>
+                <p class="modal__author">Rafael Quesada</p>
+                <p class="modal__desc">A oração está intimamente ligada à comunhão com Deus, e isso não é novidade para ninguém. Contudo, com esta leitura, eu desejo estimulá-lo a não ficar apenas num lugar onde você saiba da importância da oração, mas, principalmente, levá-lo a um lugar onde você prove do resultado da comunhão com o Pai. Para isso, se pergunte: "Como anda minha vida de oração? Eu realmente pratico o que eu sei, ou apenas estou sabendo e não praticando?</p>
+                <p class="modal__price">R$30,00</p>
+            </div> -->
+        </dialog>
     </main>
+
+    <script type="module" src="./src/scripts/index.js"></script>
 </body>
 </html>

@@ -120,7 +120,7 @@ header {
 /* BANNERS */
 
 .banners__container{
-    height: 520px;
+    height: 500px;
     /* 677 */
     width: 100%;
 
@@ -182,19 +182,21 @@ main {
     margin-top: 32px;
 }
 
-.products__mostWanted {
+.books__list, .acessories__list, .clothing__list {
     display: flex;
     overflow-x: scroll;
     gap: 15px;
+
+    padding-bottom: 15px;
 }
 
-.mostWanted__title {
+.books__title, .accessories__title, .clothing__title{
     font-size: 1rem;
     font-weight: 700;
 
     color: var(--black);
 
-    margin-bottom: 25px;
+    margin: 25px 0px 25px 0px;
 }
 
 /* CARDS - GERAL */
@@ -245,12 +247,6 @@ main {
 
 .product__infos {
     padding: 10px;
-    
-    /* display: flex;
-    align-items: center;
-    justify-content: center;
-
-    flex-direction: column; */
 }
 
 .product__name {
@@ -258,7 +254,7 @@ main {
     font-weight: 700;
 
     width: 100%;
-    max-height: 100%;
+    height: 35px;
 
     text-align: center;
 
@@ -272,6 +268,90 @@ main {
     font-weight: 500;
 
     text-align: center;
+
+    color: var(--black);
+}
+
+/* MODAL */
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.832);
+}
+
+.modal__controller {
+    width: 85%;
+    max-height: 500px;
+
+    border-radius: 4px;
+
+    border: none;
+    border: 4px;
+}
+
+
+.modal__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    gap: 10px;
+    
+    position: relative;
+    z-index: 2;
+}
+
+.modal__close {
+    position: absolute;
+    top: -5px;
+    right: 0px;
+
+    font-size: 1rem;
+    font-weight: 700;
+
+    color:  #495057;
+    background-color: #F8F9FA;
+    border-radius: 50%;
+
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal__img {
+    width: 30%;
+    height: 30%;
+}
+
+.modal__title {
+    font-size: 1.15rem;
+    font-weight: 700;
+
+    color: var(--black);
+}
+
+.modal__author {
+    font-size: .815rem;
+    font-weight: 500;
+
+    color: var(--black);
+}
+
+.modal__desc {
+    font-size: 1rem;
+    font-weight: 500;
+
+    color: var(--black);
+
+    text-align: center;
+}
+
+.modal__price {
+    font-size: .815rem;
+    font-weight: 500;
 
     color: var(--black);
 }

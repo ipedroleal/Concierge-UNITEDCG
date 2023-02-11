@@ -1,3 +1,6 @@
+import { products } from "./database.js"
+import { renderProducts } from "./render.js"
+
 // HEADER - MENU
 
 function openMenu () {
@@ -6,7 +9,6 @@ function openMenu () {
     menuMobile.addEventListener('click', () => {
         const navMenu = document.querySelector('.nav__menu')
         navMenu.classList.toggle('active')
-       
     })
 }
 
@@ -52,52 +54,4 @@ function bannnerRotation () {
 }
 bannnerRotation()
 
-
-// CARDS
-
-function createCard (array) {
-    const containerCard = document.createElement('li')
-    const containerImgs = document.createElement('div')
-    const productImg = document.createElement('img')
-    const infoBtn = document.createElement('img')
-    const containerInfos = document.createElement('div')
-    const productName = document.createElement('h3')
-    const productPrice = document.createElement('p')
-
-    containerCard.classList.add('product__card')
-
-    containerImgs.classList.add('product__containerImgs')
-
-    productImg.classList.add('product__img')
-    productImg.src = array.img
-
-    infoBtn.classList.add('product__infoBtn')
-    infoBtn.src = './src/assets/moreinfo.svg'
-
-    containerInfos.classList.add('product__infos')
-
-    productName.classList.add('product__name')
-    productName.innerText = array.name
-
-    productPrice.classList.add('product__price')
-    productPrice.innerText = array.value
-
-    containerCard.append(containerImgs, containerInfos)
-    containerImgs.append(productImg, infoBtn)
-    containerInfos.append(productName, productPrice)
-
-    return containerCard
-}
-
-function renderProducts (products) {
-    const listBooks = document.querySelector('.products__mostWanted')
-
-    products.forEach(product => {
-        const cardProduct = createCard(product)
-
-        listBooks.appendChild(cardProduct)
-    });
-}
-
 renderProducts(products)
-
